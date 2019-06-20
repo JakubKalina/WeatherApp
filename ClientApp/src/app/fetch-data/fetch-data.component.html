@@ -1,0 +1,31 @@
+
+<div>
+  <p>
+    Wpisz miasto:
+  </p>
+  <div class="col-md-4">
+    <input type="text" class="form-control" (input)="fetchCityName($event)">
+  </div>
+  <button type="button" class="btn btn-success" (click)="onUpdateCityName($event)">Wyszukaj</button>
+</div>
+
+<div class="info-block">
+
+
+  <div>
+    Temperatura:
+    <p>{{ fetchedData.main.temp | number : '1.1-1' }}</p>
+    Pogoda-opis:
+    <p> {{ fetchedData.weather[0].description }}</p>
+    Dane systemowe:
+    <p> {{ fetchedData.sys.country }} </p>
+  </div>
+
+  <div>
+    Ikona:
+    <p>
+      <img src='assets/img/{{ weatherIconName }}'>
+    </p>
+  </div>
+
+</div>

@@ -1,0 +1,11 @@
+Main conditions options:
+(D/N) - Day/Night
+
+
+-thunderstorm
+-Drizzle/Rain [rain.png]
+-Snow [snow.png]
+-Mist/Smoke/Haze/Dust/Fog/Sand/Ash/Squall [fog.png]
+-Tornado [tourbillion.png]
+-Clouds (D/N) [cloudsAndSun.png/cloudyNight.png]
+-Clear (D/N) [sunny.png/moon.png]

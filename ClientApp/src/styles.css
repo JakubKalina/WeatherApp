@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+/**/
+.container-fluid {
+    background-color: lightskyblue;
+}
+
+html, body{
+    background-color: lightskyblue;
+}
+.info-block {
+    /*Testowy kolor*/
+    background-color: lightgrey;
+    
+    margin-top: 100px;
+    height: 75vh;
+    width: 50vw;
+}
+
+    
