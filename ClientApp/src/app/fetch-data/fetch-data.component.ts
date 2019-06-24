@@ -3,8 +3,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-fetch-data',
-  templateUrl: './fetch-data.component.html',
-  styleUrls: ['./fetch-data.component.css']
+  templateUrl: './fetch-data.component.html'
 })
 
 @Injectable()
