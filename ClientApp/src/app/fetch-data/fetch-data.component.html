@@ -1,92 +1,90 @@
 
-<!--
-<div>
-  <p>
-    Wpisz miasto:
-  </p>
-  <div class="col-md-4">
-    <input type="text" class="form-control" (input)="fetchCityName($event)">
-  </div>
-  <button type="button" class="btn btn-success" (click)="onUpdateCityName($event)">Wyszukaj</button>
-</div>
--->
 
 <!--Główny kontener zewnętrzny-->
 <div>
+
   <!--Pole tekstowe do wyszukania miasta-->
-  <div>
+  <div class="row search-area">
 
     <!--Nagłówek pola tekstowego-->
-    <p>
-      City
-    </p>
+    <div class="col-md-1">
+      <span style="vertical-align: sub;">
+        City
+      </span>
+    </div>
 
     <!--Pole tekstowe-->
-    <input type="text">
+    <div class="col-md-5">
+      <input type="text" class="form-control" (input)="fetchCityName($event)">
+    </div>
 
-    <!--Test-->
-    <div class="dropdown">
-        <button class="dropbtn">Forecast type</button>
-        <div class="dropdown-content">
-          <a href="#">Current weather</a>
-          <a href="#">Hourly forecast</a>
-          <a href="#">16 day forecast</a>
-        </div>
-      </div>
+    <div class="col-md-4">
+        <select class="form-control">
+            <option value="Current weather data">Current weather data</option>
+            <option value="Hourly forecast">Hourly forecast</option>
+            <option value="16 day forecast">16 day forecast</option>
+          </select>
+    </div>
+
+    <div class="col-md-2">
+      <button class="btn btn-default" (click)="onUpdateCityName($event)">Search</button>
+    </div>
+
   </div>
 
   <!--Główny blok z uzyskanymi informacjami-->
-  <div>
+  <div class="info-block">
 
-    <!--Temperatura-->
-    <div>
+    <!--Górna część paska z informacjami-->
+    <div class="info-row">
+        <!--Temperatura-->
+        <div class="temperature">
+          temp
+        </div>
 
+        <!--Grafika pogodowa-->
+        <div class="icon">
+          grafika
+        </div>
     </div>
 
-    <!--Grafika pogodowa-->
-    <div>
-
-    </div>
 
     <!--Pozostałe informacje-->
     <div>
 
-      <!--Opis-->
-      <div>
+      <div class="info-row">
+          <!--Opis-->
+          <div class="description">
+            opis
+          </div>
 
+          <!--Ciśnienie-->
+          <div class="pressure">
+            ciśnienie
+          </div>
       </div>
 
-      <!--Ciśnienie-->
-      <div>
+      <div class="info-row">
+          <!--Wilgotność-->
+          <div class="humidity">
+            wilgotność
+          </div>
 
+          <!--Wiatr-->
+          <div class="wind">
+            wiatr
+          </div>
       </div>
-
-      <!--Wilgotność-->
-      <div>
-
-      </div>
-
-      <!--Wiatr-->
-      <div>
-
-      </div>
-
     </div>
-
   </div>
-
-
-
-
 </div>
 
 
 
 
 
-
-
-<div class="info-block">
+<!--
+  <div class="info-block">
 
 
   <div>
@@ -106,3 +104,6 @@
   </div>
 
 </div>
+
+-->
+

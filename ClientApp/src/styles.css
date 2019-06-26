@@ -1,19 +1,84 @@
 /* You can add global styles to this file, and also import other style files */
 /**/
-.container-fluid {
-    background-color: lightskyblue;
+.container-fluid {  
 }
 
+/*Styl ciała strony*/
 html, body{
-    background-color: lightskyblue;
-}
-.info-block {
-    /*Testowy kolor*/
-    background-color: lightgrey;
-    
-    margin-top: 100px;
-    height: 75vh;
-    width: 50vw;
+    background-image:  url("/assets/img/back.jpg");
+    background-size: cover;
+    background-repeat:  no-repeat;
 }
 
-    
+/*Główny blok z informacjami*/
+.info-block {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+/*Styl bloku z informacjami - wyświetlanie w jednym rzędzie*/   
+.info-row {
+    display: flex;
+}
+
+/*Styl bloku z temperaturą*/
+.temperature {
+    width: 50%;
+    float: left;
+    flex: 1;
+    padding: 1em;
+}
+
+/*Styl bloku z ikoną pogodową*/
+.icon {
+    width: 50%;
+    float: right;
+    flex: 1;
+    padding: 1em;
+}
+
+/*Styl bloku z opisem*/
+.description {
+    width: 50%;
+    float: left;
+    flex: 1;
+    padding: 1em;
+}
+
+/*Styl bloku z ciśnieniem*/
+.pressure {
+    width: 50%;
+    float: right;
+    flex: 1;
+    padding: 1em;
+}
+
+/*Styl bloku z wilgotnością*/
+.humidity {
+    width: 50%;
+    float: left;
+    flex: 1;
+    padding: 1em;
+}
+
+/*Styl bloku z wiatrem*/
+.wind {
+    width: 50%;
+    float: right;
+    flex: 1;
+    padding: 1em;
+}
+
+/*Styl bloku wyszukiwania miasta*/
+.search-area {
+background-color: rgba(255, 255, 255, 0.5);
+display: flex;
+padding-top: 30px;
+padding-bottom: 30px;
+margin-top: 10%;
+margin-left: auto;
+margin-right: auto;
+border-radius: 20px;
+
+}
