@@ -19,7 +19,7 @@
     </div>
 
     <div class="col-md-4">
-        <select class="form-control">
+        <select class="form-control" id="selected-option">
             <option value="Current weather data">Current weather data</option>
             <option value="Hourly forecast">Hourly forecast</option>
             <option value="16 day forecast">16 day forecast</option>
@@ -39,12 +39,12 @@
     <div class="info-row">
         <!--Temperatura-->
         <div class="temperature">
-          temp
+          <span>{{ fetchedData.main.temp | number : '1.1-1' }}</span>
         </div>
 
         <!--Grafika pogodowa-->
         <div class="icon">
-          grafika
+          <span><img src='assets/img/{{ weatherIconName }}'></span>
         </div>
     </div>
 
@@ -55,24 +55,24 @@
       <div class="info-row">
           <!--Opis-->
           <div class="description">
-            opis
+            <span>{{ fetchedData.weather[0].description }}</span>
           </div>
 
           <!--Ciśnienie-->
           <div class="pressure">
-            ciśnienie
+            <span>{{ fetchedData.main.pressure }}</span>
           </div>
       </div>
 
       <div class="info-row">
           <!--Wilgotność-->
           <div class="humidity">
-            wilgotność
+            <span>{{ fetchedData.main.humidity }}</span>
           </div>
 
           <!--Wiatr-->
           <div class="wind">
-            wiatr
+            <span>{{ fetchedData.wind.speed }}</span>
           </div>
       </div>
     </div>

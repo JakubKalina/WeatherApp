@@ -37,8 +37,19 @@ export class FetchDataComponent {
   // Ustala odpowiedni adres do wykonania zapytania
   onUpdateCityName(event: Event) {
     if (this.cityName == null) {
-      console.log('to pole jest wymagane');
+      alert('Choose a city');
     }
+    const chosenOption = (document.getElementById('selected-option') as HTMLInputElement).value;
+    // Dobranie linku do rządania
+    switch (chosenOption) {
+      case 'Current weather data':
+        break;
+      case 'Hourly forecast':
+        break;
+      case '16 day forecast':
+        break;
+    }
+
     this.weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + this.cityName + '&APPID=b619d522ef3145f4aa1018d261697a4f';
     this.fetchWeatherData();
   }
@@ -110,8 +121,6 @@ interface WeatherForecast {
   temperatureF: number;
   summary: string;
 }
-
-
 
 interface FetchWeather {
   coord: Coord;
