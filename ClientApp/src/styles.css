@@ -8,6 +8,17 @@ html, body{
     background-image:  url("/assets/img/back.jpg");
     background-size: cover;
     background-repeat:  no-repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mainOutlet {
+    text-align: center;
+}
+
+.body-content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*Główny blok z informacjami*/
@@ -28,6 +39,19 @@ html, body{
     float: left;
     flex: 1;
     padding: 1em;
+    padding-top: 30px;
+}
+
+div span {
+    color: white;
+    font-size: 20px;
+}
+
+.temperature span {
+    color: white;
+    font-size: 104px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 /*Styl bloku z ikoną pogodową*/
@@ -38,12 +62,23 @@ html, body{
     padding: 1em;
 }
 
+.icon span {
+    color: white;
+}
+
 /*Styl bloku z opisem*/
 .description {
     width: 50%;
     float: left;
     flex: 1;
     padding: 1em;
+}
+
+.description span {
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+    text-transform: uppercase;
 }
 
 /*Styl bloku z ciśnieniem*/
@@ -54,6 +89,13 @@ html, body{
     padding: 1em;
 }
 
+.pressure span {
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
 /*Styl bloku z wilgotnością*/
 .humidity {
     width: 50%;
@@ -62,12 +104,26 @@ html, body{
     padding: 1em;
 }
 
+.humidity span {
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
 /*Styl bloku z wiatrem*/
 .wind {
     width: 50%;
     float: right;
     flex: 1;
     padding: 1em;
+}
+
+.wind span {
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+    text-transform: uppercase;
 }
 
 /*Styl bloku wyszukiwania miasta*/

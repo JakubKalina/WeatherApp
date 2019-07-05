@@ -1,4 +1,12 @@
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
 
 <!--Główny kontener zewnętrzny-->
 <div>
@@ -55,24 +63,31 @@
       <div class="info-row">
           <!--Opis-->
           <div class="description">
+            <span>Conditions: </span>
             <span>{{ fetchedData.weather[0].description }}</span>
           </div>
 
           <!--Ciśnienie-->
           <div class="pressure">
+            <span>Pressure: </span>
             <span>{{ fetchedData.main.pressure }}</span>
+            <span> hpa</span>
           </div>
       </div>
 
       <div class="info-row">
           <!--Wilgotność-->
           <div class="humidity">
+            <span>Humidity: </span>
             <span>{{ fetchedData.main.humidity }}</span>
+            <span> %</span>
           </div>
 
           <!--Wiatr-->
           <div class="wind">
+            <span>Wind: </span>
             <span>{{ fetchedData.wind.speed }}</span>
+            <span> m/s</span>
           </div>
       </div>
     </div>
